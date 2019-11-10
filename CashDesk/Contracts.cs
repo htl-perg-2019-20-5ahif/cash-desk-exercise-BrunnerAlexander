@@ -170,18 +170,18 @@ namespace CashDesk
         /// <summary>
         /// Adds a new member
         /// </summary>
-        /// <seealso cref="IMember"/>
-        /// <returns>
+        /// <seealso cref = "IMember" />
+        /// < returns >
         /// Number of the new member
         /// </returns>
-        /// <exception cref="InvalidOperationException">
-        /// <see cref="InitializeDatabaseAsync"/> has not been called before
+        /// <exception cref = "InvalidOperationException" >
+        /// < see cref="InitializeDatabaseAsync"/> has not been called before
         /// </exception>
-        /// <exception cref="ArgumentException">
-        /// At least one of the parameters contains an invalid value. The exception's <see cref="Exception.Message"/>
+        /// <exception cref = "ArgumentException" >
+        /// At least one of the parameters contains an invalid value.The exception's <see cref="Exception.Message"/>
         /// property has to contain details about the error.
         /// </exception>
-        /// <exception cref="DuplicateNameException">
+        /// <exception cref = "DuplicateNameException" >
         /// Member with the same last name already exists.
         /// </exception>
         Task<int> AddMemberAsync(string firstName, string lastName, DateTime birthday);
